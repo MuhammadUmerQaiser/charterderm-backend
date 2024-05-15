@@ -15,7 +15,7 @@ class Contact extends Model
 
     public function contactUs(Request $request)
     {
-        Notification::route('mail', 'umerqaiser1009@gmail.com')
+        Notification::route('mail', 'cgrove@charterderm.com')
             ->notify(new ContactUsQueryNotification($request));
 
         return response()->json(['status' => 200, 'message' => 'Your query submitted successfully']);
